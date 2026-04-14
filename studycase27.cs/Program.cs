@@ -9,7 +9,7 @@ namespace Merk_Baju
     {
        static void Main(string[] args)
         {
-            /*Console.WriteLine("=== Pilih merk baju ===");
+            Console.WriteLine("=== Pilih merk baju ===");
             Console.Write("Masukkan merk baju anda H&M/UNIQLO/ZARA  : ");
             string merk = Console.ReadLine();
             Console.Write("Masukkan ukuran baju anda (S, M, L, XL) : ");
@@ -64,7 +64,7 @@ namespace Merk_Baju
             Console.WriteLine("merk     : " + merk);
             Console.WriteLine("ukuran   : " + ukuran);
             Console.WriteLine("harga    : " + harga);
-            Console.WriteLine("===============");*/
+            Console.WriteLine("===============");
 
             /*Console.WriteLine("=== Pilih merk baju ===");
             Console.Write("Masukkan merk baju anda H&M/UNIQLO/ZARA  : ");
@@ -346,7 +346,7 @@ namespace Merk_Baju
             }*/
 
 
-            Console.WriteLine("====== pilih study case yang ingin anda coba ======");
+            /*Console.WriteLine("====== pilih study case yang ingin anda coba ======");
             Console.WriteLine();
             Console.WriteLine("1. Study Case 45");
             Console.WriteLine("2. Study Case 46");
@@ -445,7 +445,7 @@ namespace Merk_Baju
                 else
                 {
                     Console.WriteLine("Terima kasih telah mencoba!");
-                }
+                }*/
 
         }
     } 
