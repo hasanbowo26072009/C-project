@@ -1,7 +1,7 @@
 using System;
 using System.Data;
 using System.Diagnostics;
-/*namespace ChallengePW
+namespace ChallengePW
 {
     class ChalengePW
     {
@@ -24,4 +24,4 @@ using System.Diagnostics;
             }
         }
     }
-}*/
+}
