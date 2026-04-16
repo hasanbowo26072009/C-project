@@ -9,7 +9,7 @@ namespace Merk_Baju
     {
        static void Main(string[] args)
         {
-            Console.WriteLine("=== Pilih merk baju ===");
+            /*Console.WriteLine("=== Pilih merk baju ===");
             Console.Write("Masukkan merk baju anda H&M/UNIQLO/ZARA  : ");
             string merk = Console.ReadLine();
             Console.Write("Masukkan ukuran baju anda (S, M, L, XL) : ");
@@ -64,7 +64,7 @@ namespace Merk_Baju
             Console.WriteLine("merk     : " + merk);
             Console.WriteLine("ukuran   : " + ukuran);
             Console.WriteLine("harga    : " + harga);
-            Console.WriteLine("===============");
+            Console.WriteLine("===============");*/
 
             /*Console.WriteLine("=== Pilih merk baju ===");
             Console.Write("Masukkan merk baju anda H&M/UNIQLO/ZARA  : ");
@@ -446,6 +446,46 @@ namespace Merk_Baju
                 {
                     Console.WriteLine("Terima kasih telah mencoba!");
                 }*/
+                
+                //ABSEN SEDRHANA
+                Console.WriteLine("----- Presensi Digital SMKN 1 Bantul -----");
+                Console.WriteLine("Pilih presensi : ");
+                Console.WriteLine("1. Presensi guru");
+                Console.WriteLine("2. Presensi siswa");
+                Console.Write("Masukkan pilihan (1/2) : ");
+                string pilihan = Console.ReadLine();
+                if (pilihan == "1")
+                {
+                    Console.WriteLine("Anda memilih presensi guru.");
+                    Console.Write("Masukkan nama lengkap : ");
+                    string nama = Console.ReadLine();
+                    Console.Write("Masukkan NIP : ");
+                    string nip = Console.ReadLine();
+                    Console.Write("Masukkan mapel yang diampu : ");
+                    string jenisGuru = Console.ReadLine();
+                    Console.WriteLine("\n--- Data Presensi Guru ---");
+                    Console.WriteLine("Nama lengkap : " + nama);
+                    Console.WriteLine("NIP : " + nip);
+                    Console.WriteLine("Mapel yang diampu : " + jenisGuru);
+                    Console.WriteLine("Selamat mengajar hari ini Bapak/Ibu " + nama + "!");
+                    Console.WriteLine("-------------------------");
+                }
+                else
+                {
+                    Console.WriteLine("Anda memilih presensi siswa.");
+                    Console.Write("Masukkan nama lengkap : ");
+                    string nama = Console.ReadLine();
+                    Console.Write("Masukkan NIS : ");
+                    string nis = Console.ReadLine();
+                    Console.Write("Masukkan kelas : ");
+                    string kelas = Console.ReadLine();
+                    Console.WriteLine("\n--- Data Presensi Siswa ---");
+                    Console.WriteLine("Nama lengkap : " + nama);
+                    Console.WriteLine("NIS : " + nis);
+                    Console.WriteLine("Kelas : " + kelas);
+                    Console.WriteLine("Selamat belajar hari ini " + nama + "!");
+                    Console.WriteLine("-------------------------");
+                }
 
         }
     } 
