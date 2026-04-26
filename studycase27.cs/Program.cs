@@ -448,7 +448,7 @@ namespace Merk_Baju
                 }*/
                 
                 //ABSEN SEDRHANA
-                Console.WriteLine("----- Presensi Digital SMKN 1 Bantul -----");
+                /*Console.WriteLine("----- Presensi Digital SMKN 1 Bantul -----");
                 Console.WriteLine("Pilih presensi : ");
                 Console.WriteLine("1. Presensi guru");
                 Console.WriteLine("2. Presensi siswa");
@@ -485,7 +485,46 @@ namespace Merk_Baju
                     Console.WriteLine("Kelas : " + kelas);
                     Console.WriteLine("Selamat belajar hari ini " + nama + "!");
                     Console.WriteLine("-------------------------");
+                }*/
+
+                Console.WriteLine("=== Sistem Kasir Hans Petshop ===");
+                Console.Write("Masukkan nama pelanggan : ");
+                string namaPelanggan = Console.ReadLine();
+                Console.Write("Masukkan jumlah jenis barang : ");
+                int jumlahJenis = int.Parse(Console.ReadLine());
+                int totalBelanja = 0;
+                for (int i = 0; i < jumlahJenis; i++)
+                {
+                    Console.Write("Masukkan harga barang ke-" + (i + 1) + " : ");
+                    int hargaBarang = int.Parse(Console.ReadLine());
+                    totalBelanja += hargaBarang;
+                    
                 }
+                
+                double diskonPersen = 0;
+                if (totalBelanja > 100000)
+                {
+                    diskonPersen = 0.50;
+                }
+                else if (totalBelanja > 20000)
+                {
+                    diskonPersen = 0.20;
+                }
+                int jumlahDiskon = (int)(totalBelanja * diskonPersen);
+                int totalBayar = totalBelanja - jumlahDiskon;
+
+                Console.WriteLine("\n --- Struk Belanja ---");
+                Console.WriteLine("Nama pelanggan : " + namaPelanggan);
+                Console.WriteLine("Total belanja : " + totalBelanja);
+                Console.WriteLine("Diskon : " + jumlahDiskon);
+                Console.WriteLine("Total bayar : " + totalBayar);
+                Console.WriteLine("----------------------");
+                Console.WriteLine();
+                Console.Write("Jumlah uang yang dibayarkan : ");
+                int uangDibayarkan = int.Parse(Console.ReadLine());
+                int kembalian = uangDibayarkan - totalBayar;
+                Console.WriteLine("Kembalian : " + kembalian);
+                Console.WriteLine("Terima kasih telah berbelanja di Hans Petshop!");
 
         }
     } 
