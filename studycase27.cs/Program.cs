@@ -487,7 +487,7 @@ namespace Merk_Baju
                     Console.WriteLine("-------------------------");
                 }*/
 
-                Console.WriteLine("=== Sistem Kasir Hans Petshop ===");
+                /*Console.WriteLine("=== Sistem Kasir Hans Petshop ===");
                 Console.Write("Masukkan nama pelanggan : ");
                 string namaPelanggan = Console.ReadLine();
                 Console.Write("Masukkan jumlah jenis barang : ");
@@ -524,11 +524,28 @@ namespace Merk_Baju
                 int uangDibayarkan = int.Parse(Console.ReadLine());
                 int kembalian = uangDibayarkan - totalBayar;
                 Console.WriteLine("Kembalian : " + kembalian);
-                Console.WriteLine("Terima kasih telah berbelanja di Hans Petshop!");
+                Console.WriteLine("Terima kasih telah berbelanja di Hans Petshop!");*/
+
+
+                //TUGAS ARRAY
+
+                string[] namaSiswa = {"Hasan  ", "Bowo   ", "Arya   ", "Nabiil ", "Tamamoy"};
+                int[] nilaiSiswa = {80, 90, 50, 60, 70};
+                Console.WriteLine("==== Daftar siswa yang memiliki nilai tertinggi di kelas XRPL1 ====");
+                for (int i = 0; i < namaSiswa.Length; i++)
+                {
+                    Console.WriteLine(namaSiswa[i] + " : " + nilaiSiswa[i]);
+                }
+                Console.WriteLine();
+                Console.WriteLine("Selamat kepada siswa di atas karena telah mendapatkan nilai tertinggi di kelas XRPL1");
+                Console.ReadLine();
+
+
+
+                
+
+
 
         }
     } 
 }        
-
-
-
